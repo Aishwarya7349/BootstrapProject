@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pastry - PatioTime pastries</title>
+    <link rel="icon" href="pt-logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    #navbarSupportedContent a:hover {
+        text-decoration: underline;
+        text-decoration-color: #dd5903;
+    }
+    
+    #herosection {
+        background: linear-gradient(rgba(0, 0, 0, 0.174), rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.525)), url(chelsea-audibert-hV1gChgMa-k-unsplash.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+    
+    #paragraph {
+        margin-left: 0px;
+    }
+    
+    #paragraph h5 {
+        color: #dd5903;
+    }
+    
+    #paragraph button {
+        background-color: #dd5903;
+        color: white;
+    }
+    
+    #tasty-lunches {
+        background-color: rgba(230, 179, 123, 0.8);
+    }
+    
+    #tasty {
+        border: 1px dashed chocolate;
+        margin-bottom: 10px;
+    }
+    
+    #tasty2 {
+        margin-top: 10px;
+        height: 550px;
+    }
+    
+    #tasty2 img {
+        height: 100%;
+    }
+    
+    #button-img {
+        background-image: url(chelsea-audibert-hV1gChgMa-k-unsplash-300x300\ \(1\).jpg);
+        height: 300px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    #button-img button {
+        margin-top: 260px;
+        margin-left: 100px;
+        background-color: #dd5903;
+        color: white;
+    }
+    
+    #button-img1 {
+        background-image: url(macarons-2-300x300.jpg);
+        height: 300px;
+        width: 300px;
+    }
+    
+    #button-img1 button {
+        margin-top: 260px;
+        margin-left: 100px;
+        background-color: #dd5903;
+        color: white;
+    }
+    
+    #button-img2 {
+        background-image: url(macarons-300x300.jpg);
+        height: 300px;
+        width: 300px;
+    }
+    
+    #button-img2 button {
+        margin-top: 260px;
+        margin-left: 100px;
+        background-color: #dd5903;
+        color: white;
+    }
+    
+    #overlay1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #overlay2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #overlay3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #overlay-item {
+        padding-top: 250px;
+    }
+    
+    #overlay-item button {
+        background-color: #dd5903;
+        color: white;
+        border-color: #dd5903;
+    }
+    
+    #cart-para1 {
+        text-align: center;
+    }
+    
+    #cart-para2 {
+        text-align: center;
+    }
+    
+    #cart-para3 {
+        text-align: center;
+    }
+    
+    #newsletter {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    #newsletter h4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    
+    .newsletter-input {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    
+    .newsletter-input input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+        outline: none;
+        padding: 10px 40px 10px 0;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+    
+    .newsletter-input button {
+        position: absolute;
+        background: none;
+        border: none;
+        color: #000;
+        right: 10px;
+    }
+    
+    .form-check label {
+        font-size: 16px;
+    }
+    
+    .social-icons a {
+        color: #000;
+        margin-right: 15px;
+    }
+    
+    .social-icons a:hover {
+        color: #7b3f00;
+    }
+    
+    .custom-line {
+        border: none;
+        border-top: 1px dashed white;
+        margin: 30px 0;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: darkorange;
+        text-decoration: underline;
+    }
+    
+    @media only screen and (min-width:768px) {
+        #tasty {
+            margin-bottom: 0px;
+        }
+        #tasty2 {
+            height: 597px;
+            margin-top: 0px;
+        }
+        #tasty2 img {
+            height: 100%;
+        }
+        #overlay-item {
+            padding-top: 180px;
+        }
+    }
+    
+    @media only screen and (min-width:1200px) {
+        #paragraph {
+            margin-left: 250px;
+        }
+        #tasty1 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        #tasty {
+            margin-bottom: 0px;
+        }
+        #tasty2 {
+            margin-top: 0px;
+        }
+        #overlay1 {
+            height: 300px;
+            width: 300px;
+        }
+        #overlay1 img {
+            height: 100%;
+            width: 100%;
+        }
+        #overlay2 {
+            height: 300px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        #overlay2 img {
+            height: 100%;
+            width: 100%;
+        }
+        #overlay3 {
+            height: 300px;
+            width: 300px;
+            margin-left: 90px;
+        }
+        #overlay3 img {
+            height: 100%;
+            width: 100%;
+        }
+        #cart-para1 {
+            text-align: center;
+            margin-right: 120px;
+        }
+        #cart-para2 {
+            text-align: center;
+        }
+        #cart-para3 {
+            text-align: center;
+            margin-left: 70px;
+        }
+        #overlay-item {
+            padding-top: 260px;
+        }
+    }
+</style>
+
+<body>
+    <section class="container-fluid g-0" id="mainwrapper">
+        <section class="container-fluid fixed-top p-0" id="header">
+            <section class="container-fluid bg-light">
+                <section class="row">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg bg-light" id="navbar-example2">
+                            <a class="navbar-brand " href="index.html"><img src="pastry-logo-15.jpg" class="img-fluid mx-auto" style="width: 200px;"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                               <span class="navbar-toggler-icon"></span>
+                                   </button>
+
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="menu.html">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="pastries.html">Pastries</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+
+                            <div class="d-flex gap-4"><a href="" class="d-none d-xl-block" style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="" class="d-none d-xl-block" style="color:black;"> <i class="fa-solid fa-circle-user"></i></a>
+                                <a href="" style="color:black;"><i class="fa-solid fa-cart-plus"></i></a></div>
+
+                        </nav>
+                    </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!--end of the header-->
+        <section class="container-fluid" id="herosection">
+
+        </section>
+        <!--end of herosection-->
+        <section class="container-fluid" id="para">
+            <section class="container">
+                <div class="mt-5 text-center col-xl-8 container" id="paragraph">
+                    <h5 style="font-size:16px;">COLLECTION OF PASTRIES</h5>
+                    <h2 style=" font-size:50px;">TIME REGAINED</h2>
+                    <p>Ipsum dolor enim amet consecatetur adipisicing elit labore eiusmod tempor incididunt sed dolore magna aliqua. Ut veniam quis nostrud exercitation enmy suade minim yom ullamco. Nostrud exercitation ullamco laboris nisi aliquip comod
+                        cons equat duis reprehenderit sed eiusmod tempor lorem ipsum dolor temp sit amet consectetur.</p>
+                    <button>DISCOVER MORE</button>
+                </div>
+            </section>
+        </section>
+
+        <!--end of para-->
+        <section class="container-fluid mt-5" id="tasty-lunches">
+            <section class="row align-items-center">
+                <div class="col-12 col-md-6 pe-2" id="tasty">
+                    <div id="tasty1">
+
+                        <h5 class="" style="color:brown;">Our favourite territory of expression</h5>
+                        <h2 class="" style="color:brown; text-transform: uppercase; font-size:40px;">Handmade cookies, a small pastry bite, lends itself to unlimited creativity.</h2>
+                        <p style="color:brown;">Requiring real know-how, the texture of the shell associated with the always generous filling contributes to the experience and emotion.</p>
+                        <p style="color:brown;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button class="text-decoration-none p-2" style="color:brown; border:2px solid brown; background-color: rgba(230, 179, 123, 0.8);">START SHOPPING</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0" id="tasty2"><img src="luna-hu-0T-7_dvq0ZM-unsplash.jpg" class="img-fluid w-100"></div>
+
+            </section>
+        </section>
+        <section class="container-fluid mt-5 mt-3" id="img-overlay">
+            <section class="container">
+                <section class="row p-0">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay1">
+                            <img src="megan-bucknall-Np38qV3HVF0-unsplash-300x300.jpg" class="card-img img-fluid w-100" alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+                                <button class="card-button">ADD TO CART</button>
+
+                            </div>
+                        </div>
+                        <div id="cart-para1">
+                            <p>Macoran Box</p>
+                            <p>$60.00</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay2">
+                            <img src="elena-leya-2mOHx9MIqb8-unsplash-300x300.jpg" class="card-img img-fluid w-100 rounded-0" alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+                                <button class="card-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div id="cart-para2">
+                            <p>Macoron Collection</p>
+                            <p>$99.00</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay3">
+                            <img src="luna-hu-TgJHwwTSZ2Y-unsplash-300x300.jpg" class="card-img img-fluid w-100 rounded-0 " alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+
+                                <button class="card-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div id="cart-para3">
+                            <p>Signature Macarons</p>
+                            <p>$80.00</p>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+        </section>
+
+        <!--end of img-overlay-->
+        <section class="container-fluid mt-5" id="tasty-lunches">
+            <section class="row align-items-center">
+                <div class="col-12 col-md-6 p-0" id="tasty2"><img src="benigno-hoyuela-WIipsQ1P8ms-unsplash.jpg" class="img-fluid w-100"></div>
+                <div class="col-12 col-md-6 pe-2" id="tasty">
+                    <div id="tasty1">
+
+                        <h5 class="" style="color:brown;">Our favourite territory of expression</h5>
+                        <h2 class="" style="color:brown; text-transform: uppercase; font-size:40px;">The macaron, a small pastry bite, lends itself to unlimited creativity.</h2>
+                        <p style="color:brown;">Requiring real know-how, the texture of the shell associated with the always generous filling contributes to the experience and emotion.</p>
+                        <p style="color:brown;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button class="text-decoration-none p-2" style="color:brown; border:2px solid brown; background-color: rgba(230, 179, 123, 0.8);">START SHOPPING</button>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+        <section class="container-fluid mt-5 mt-3" id="img-overlay">
+            <section class="container">
+                <section class="row p-0">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay1">
+                            <img src="chelsea-audibert-hV1gChgMa-k-unsplash-300x300 (1).jpg" class="card-img img-fluid w-100" alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+                                <button class="card-button">ADD TO CART</button>
+
+                            </div>
+                        </div>
+                        <div id="cart-para1">
+                            <p>Macoran Box</p>
+                            <p>$60.00</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay2">
+                            <img src="macarons-2-300x300.jpg" class="card-img img-fluid w-100 rounded-0" alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+                                <button class="card-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div id="cart-para2">
+                            <p>Macoron Collection</p>
+                            <p>$99.00</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark" id="overlay3">
+                            <img src="macarons-300x300.jpg" class="card-img img-fluid w-100 rounded-0 " alt="...">
+                            <div class="card-img-overlay text-center" id="overlay-item">
+
+                                <button class="card-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div id="cart-para3">
+                            <p>Signature Macarons</p>
+                            <p>$80.00</p>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+        </section>
+        <section class="container-fluid mt-5" id="contact">
+            <section class="container">
+                <section class="row">
+                    <div class="col-12 col-md-12 col-xl-6" id="newsletter">
+                        <div class="text-start">
+                            <h4>SUBSCRIBE TO THE NEWSLETTER: LET'S STAY IN TOUCH!</h4>
+
+                            <form>
+
+                                <div class="newsletter-input">
+                                    <input type="email" placeholder="Your Email Address" required>
+                                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+
+
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+            I agree to the Privacy Policy
+          </label>
+                                </div>
+
+
+                                <p class="fw-bold mb-2">FOLLOW US:</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3 mt-md-0">
+                        <h4>ADDRESS AND HOURS</h4>
+                        <P>Silk St, Barbican, London EC2Y 8DS, UK</P>
+                        <div class="row">
+                            <div class="col-6">
+                                Monday - Friday</div>
+                            <div class="col-6">09:00 - 22:00</div>
+                            <div class="col-6">Saturday - Sunday</div>
+                            <div class="col-6">11:00 - 00:00
+                            </div>
+
+                        </div>
+                        <button class="btn btn-transparent border border-dark border-2 rounded-0 mt-4">CONTACT US</button>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3 mt-md-0">
+                        <h4>TAKING ORDERS</h4>
+                        <P>Exclusively by phone</P>
+                        <P>Tel: +39-055-123456</P>
+                        <P>Monday to Sunday from 10 a.m. to 6 p.m.</P>
+                        <button class="btn btn-transparent border border-dark border-2 rounded-0 mt-2">ORDRE NOW</button>
+                    </div>
+                </section>
+            </section>
+            <!--end of contact-->
+            <section class="container-fluid bg-dark mt-5 p-0 g-0" id="footer">
+                <section class="container">
+                    <section class="row">
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="shop-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">IN OUR STORES</h4>
+                            <P class="text-light">Pickup your products in our Paris, Cannes or Monaco stores</P>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="shipped-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">HOME DELIVERY</h4>
+                            <P class="text-light">Products carefully shipped in 24h in France & in 48h in Europe</P>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="delivery-man-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">By a Caring Courier</h4>
+                            <p class="text-light">In Paris and inner suburbs, Monday to Saturday, from 1pm to 7pm</p>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="credit-card-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">100% Secure Payment</h4>
+                            <p class="text-light">Support for multiple payment gateways. CB, VISA, Mastercard, Amex</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="col-12 mt-3">
+                            <div class="row text-light">
+                                <div class="col-12 col-xl-5 d-none d-xl-block ">
+                                    <p>&copy; Copyright PatioTime WordPress Theme for Restaurant & Cafe.</p>
+                                </div>
+                                <div class="col-12 col-md-4 col-xl-3 text-center mt-2 mt-md-0"><a href="https://www.google.com/maps/place/Barbican+Centre/@51.5205487,-0.0936463,18z/data=!4m13!1m7!3m6!1s0x48761ca98744377d:0x9e296ec2b218ce78!2sSilk+St,+London,+UK!3b1!8m2!3d51.5198778!4d-0.0916239!3m4!1s0x48761b56fb64b275:0xc756e26675d21f40!8m2!3d51.5202077!4d-0.0937864
+                    "><i class="fa-solid fa-location-dot "></i>Silk St, Barbican, London EC2Y 8DS, UK</a></div>
+                                <div class="col-12 col-md-4 col-xl-2 text-center mt-2 mt-md-0"><a href="tel:+39-055-123456 "><i class="fa-solid fa-phone "></i> +39-055-123456</a></div>
+                                <div class="col-12 col-md-4 col-xl-2 text-center mt-2 mt-md-0"><a href="booking@patiotime.com "><i class="fa-solid fa-envelope "></i>booking@patiotime.com</a></div>
+                                <div class="col-12 d-xl-none text-center mt-3">
+                                    <p>&copy; Copyright PatioTime WordPress Theme for Restaurant & Cafe.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </section>
+            </section>
+            <!--end of footer-->
+        </section>
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
